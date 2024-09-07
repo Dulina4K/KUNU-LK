@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunu.lk |</title>
+<!-- Link to the favicon -->
+<link rel="icon" type="image/x-icon" href="kunu ico.ico">
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header>
+      <div class="header">
+        <a href="#" class="logo"><img src="1.jpg.png" alt="kunu.lk logo" /></a>
+        <div class="header-right" id="menu">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#service">service</a>
+          <a href="#project">project</a>
+          <a href="#donate">donate</a>
+          <a href="#post">post</a>
+        </div>
+        <!-- Hamburger icon -->
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i> <!-- Make sure FontAwesome is linked in your project -->
+        </a>
+      </div>
+    </header>
+    <script>
+    function toggleMenu() {
+      var x = document.getElementById("menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script> 
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+      <video autoplay muted loop class="bg-video2">
+        <source src="vid3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="content">
+        <video autoplay muted loop class="bg-video">
+          <source src="green.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h1>Your Trash, Our Treasure</h1>
+        <p>
+          Clean Earth, Clean Future: Your Waste, Our Responsibility. Join Us for
+          a Better Tomorrow
+        </p>
+        <a href="#about"><button class="btn">eXplore</button></a>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <h1 class="heading">about us</h1>
+      <div class="row">
+        <div class="image">
+          <img src="1.jpg.png" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>Our Commitment To A Cleaner Tommorrow.</h3>
+          <p>
+            At KUNU.LK , we're committed to a cleaner, greener future. As a
+            trusted waste management service,</br> we provide efficient and
+            eco-friendly solutions to ensure responsible waste handling. Our
+            mission</br> is to turn waste into a resource, minimizing environmental
+            impact and paving the way  for</br> a healthier planet. Join us in
+            creating a cleaner earth, one step at a time.
+          </p>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-users"></i>
+          <h3>100+</h3>
+          <p>volunteers</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-tree"></i>
+          <h3>3</h3>
+          <p>beaches cleaned</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-paw"></i>
+          <h3>450+</h3>
+          <p>animals saved</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-donate"></i>
+          <h3>200+</h3>
+          <p>donators</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- service section starts  -->
+
+    <section class="service" id="service">
+      <h1 class="heading">Our Services</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <!-- Trigger Modal -->
+          <a href="#" data-toggle="modal" data-target="#detailsModal">
+            <i class="fas fa-paper-plane"></i>
+            <h3>D2D Waste Collection</h3>
+          </a>
+
+          <!-- Modal Structure -->
+          <div
+            class="modal fade"
+            id="detailsModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="detailsModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="detailsModalLabel"
+                    style="font-weight: bold; font-size: 18px; color: #333"
+                  >
+                    D2D Waste Collection
+                  </h5>
+                </div>
+                <div class="modal-body" style="font-size: 16px; color: #333 ;text-align: justify;">
+                  <!-- Details-->
+                  Say goodbye to the hassle of managing your waste! Our Door-to-Door Garbage Disposal service brings convenience right to your doorstep. Simply schedule a pickup, and our professional team will handle the rest—promptly and efficiently. From household trash to yard waste, we ensure that your garbage is collected and disposed of properly, leaving your home cleaner and your mind at ease. Experience the ultimate in waste management with our reliable and eco-friendly solutions.
+                 <!-- Image -->
+                </div>
+                <img
+                src="Recycle-right.jpg"
+                alt="Waste Collection Service"
+                style="display: block;margin: 15px auto 0 auto; width: 500px; height: auto;"
+                aline
+              />
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <!-- Trigger Modal -->
+          <a href="#" data-toggle="modal" data-target="#detailsModal1">
+            <i class="fas fa-recycle"></i>
+            <h3>Recycle</h3>
+          </a>
+          <!-- Modal Structure -->
+          <div
+            class="modal fade"
+            id="detailsModal1"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="detailsModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="detailsModalLabel"
+                    style="font-weight: bold; font-size: 18px; color: #333"
+                  >
+                    Recycle
+                  </h5>
+                </div>
+                <div class="modal-body" style="font-size: 16px; color: #333 ;text-align: justify;">
+                  <!-- Details-->
+                  Turn your recyclables into positive impact with our Door-to-Door Recycling service. We make it easy to do your part for the environment by bringing recycling collection right to your door. Schedule a pickup, and our dedicated team will handle the sorting and transportation of your recyclable materials—responsibly and efficiently. Whether it’s paper, plastics, metals, or glass, we ensure that your items are processed correctly and contribute to a sustainable future. Simplify your recycling routine and join us in making a difference!
+                </div>
+                <img
+                src="Recycle-right.jpg"
+                alt="Waste Collection Service"
+                style="display: block;margin: 15px auto 0 auto; width: 500px; height: auto;"
+              />
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#detailsModal2">
+            <i class="fas fa-hand-holding-water"></i>
+            <h3>Private Collections</h3>
+          </a>
+          <!-- Modal Structure -->
+          <div
+            class="modal fade"
+            id="detailsModal2"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="detailsModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="detailsModalLabel"
+                    style="font-weight: bold; font-size: 18px; color: #333"
+                  >
+                    Private Collections
+                  </h5>
+                </div>
+                <div class="modal-body" style="font-size: 16px; color: #333;text-align: justify;">
+                  <!-- Details-->
+                  Experience personalized waste management with our Private Collection service. Designed for those who require a tailored approach, this service offers exclusive, customized garbage and recycling collection right at your doorstep. Whether you need frequent pickups, specialized handling, or specific time slots, our team is dedicated to meeting your unique needs with discretion and professionalism. Enjoy a hassle-free solution that caters to your schedule and preferences, ensuring that your waste is managed efficiently and with the utmost care.
+                </div>
+                <img
+                  src="Recycle-right.jpg"
+                  alt="Waste Collection Service"
+                  style="display: block;margin: 15px auto 0 auto; width: 500px; height: auto;"
+                />
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#detailsModal3">
+            <i class="fas fa-tree"></i>
+            <h3>Cleaning Projects</h3></a
+          >
+          <!-- Modal Structure -->
+          <div
+            class="modal fade"
+            id="detailsModal3"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="detailsModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="detailsModalLabel"
+                    style="font-weight: bold; font-size: 18px; color: #333"
+                  >
+                    Cleaning Projects
+                  </h5>
+                </div>
+                <div class="modal-body" style="font-size: 16px; color: #333 ;text-align: justify;">
+                  <!-- Details-->
+                  Transform your space with our expert Cleaning Projects service. Whether it’s a one-time deep clean, post-construction cleanup, or a special event preparation, our dedicated team is equipped to handle projects of all sizes. We focus on thorough, efficient, and meticulous cleaning, ensuring every corner of your space is spotless. From removing debris to sanitizing surfaces, we tackle the toughest cleaning challenges with precision and care. Trust us to deliver exceptional results, making your environment pristine and refreshed.
+                </div>
+                <img
+                src="Recycle-right.jpg"
+                alt="Waste Collection Service"
+                style="display: block;margin: 15px auto 0 auto; width: 500px; height: auto;"
+              />
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service section ends -->
+
+    <!-- project section starts  -->
+
+    <section class="project" id="project">
+      <h1 class="heading">our projects</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="Trash-to-art.jpg" alt="" />
+          <div class="icons">
+            <a>Trash-To-Art Project</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="ocean.jpg" alt="" />
+          <div class="icons">
+            <a>Ocean & River Cleanup Project</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="trash-separation.jpg" alt="" />
+          <div class="icons">
+            <a>Trash Separation Project</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="waste-o-energy.jpg" alt="" />
+          <div class="icons">
+            <a>Waste-To-Energy Project</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="disposable.jpg" alt="" />
+          <div class="icons">
+            <a>Disposable Product Campaign Project</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="house.jpg" alt="" />
+          <div class="icons">
+            <a>Household Composting Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- project section ends -->
+
+    <!-- donate section starts  -->
+
+    <section class="donate" id="donate">
+      <h1 class="heading">Donate Us</h1>
+  
+      <div class="video-container">
+          <video src="images/video.mp4" loop autoplay muted></video>
+      </div>
+  
+      <div class="form-container">
+          <form id="donationForm" onsubmit="return validateForm()" action="Payment.html" method="GET">
+              <div class="inputBox">
+                  <input type="text" placeholder="First Name" required />
+                  <input type="text" placeholder="Last Name" required />
+              </div>
+  
+              <div class="inputBox">
+                  <input type="email" placeholder="Enter Your Email" required />
+                  <select name="donation" required>
+                      <option value="" selected disabled>Donation Amount</option>
+                      <option value="$5">$5</option>
+                      <option value="$10">$10</option>
+                      <option value="$15">$15</option>
+                      <option value="$20">$20</option>
+                  </select>
+              </div>
+  
+              <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message (Optional)"
+              ></textarea>
+  
+              <input type="submit" class="btn" value="Donate" />
+          </form>
+      </div>
+  </section>
+  
+  <script>
+      function validateForm() {
+          const form = document.getElementById('donationForm');
+          if (form.checkValidity()) {
+              // All fields are valid, submit the form
+              return true;
+          } else {
+              // Form is invalid, prevent submission
+              alert('Please fill in all required fields.');
+              return false;
+          }
+      }
+  </script>
+  
+
+
+    <!-- donate section ends -->
+
+    <!-- post section starts  -->
+
+    <section class="post" id="post">
+      <h1 class="heading">our recent posts</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="Recycle-right.jpg" alt="" />
+          <div class="content">
+            <span> <i class="fas fa-calendar"></i> Feb 17, 2019 </span>
+            <h3>Recycle Right</h3>
+            <p>
+              Not everything can be recycled. Make sure to check your local
+              recycling guidelines and only recycle items that are accepted.Get
+              involved in local clean-up efforts to keep our streets, parks, and
+              beaches clean.reduce trash and enrich your soil!
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="communityclean.jpg" alt="" />
+          <div class="content">
+            <span> <i class="fas fa-calendar"></i> jan 3, 2021 </span>
+            <h3>Join a Community CleanUp</h3>
+            <p>
+              Get involved in local clean-up efforts to keep our streets, parks,
+              and beaches clean.Separate your trash into recyclables,
+              compostables, and non-recyclables. This makes recycling easier and
+              reduces landfill waste,helping to reduce plastic pollution.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="household.jpg" alt="" />
+          <div class="content">
+            <span> <i class="fas fa-calendar"></i> Aug 8, 2022 </span>
+            <h3>Dispose Of E-Wast Properly</h3>
+            <p>
+              Old electronics contain hazardous materials that shouldn't end up in the trash. Take them to a proper e-waste recycling center.Use reusable bags, bottles, and containers. Every time you refuse a plastic bag or bottle.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- post section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <a href="#" class="logo"><img src="f1.png" alt="" /></a>
+          <p>
+            Clean Earth, Clean Future: Your Waste, Our Responsibility.  Join Us for a Better Tomorrow
+          </p>
+        </div>
+
+        <div class="box">
+          <h3 class="share">share</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">github</a>
+        </div>
+
+        <div class="box">
+          <h3 class="letter">newsletter</h3>
+          <form action="">
+            <input type="email" placeholder="enter your email" />
+            <button type="submit" class="fas fa-paper-plane"></button>
+          </form>
+        </div>
+      </div>
+
+      <h1 class="credit">
+        powered by <span>KUNU LK</span> | all rights reserved
+      </h1>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
